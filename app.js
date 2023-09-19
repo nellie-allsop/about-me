@@ -3,57 +3,101 @@ message = "Hi there " + myName + "👋";
 
 alert(message);
 
-let firstQuestion = prompt(
-	"Ok, I'm going to be quizzing you about me today! Please answer yes or no to each of the following statements. Firstly: My middle name is Grace"
-);
+function startQuiz() {
+	let firstQuestion = prompt(
+		"Ok, I'm going to be quizzing you about me today! Please answer yes or no to each of the following statements. Firstly: My middle name is Grace"
+	);
 
-let secondQuestion = prompt("I used to have a guinea pig called Derek");
+	if (
+		firstQuestion.toLowerCase() === "yes" ||
+		firstQuestion.toLowerCase() === "y"
+	) {
+		message = "Incorrect! ❌";
+	} else if (
+		firstQuestion.toLowerCase() === "no" ||
+		firstQuestion.toLowerCase() === "n"
+	) {
+		message = "Correct! ✅";
+	} else {
+		message = "That is not a valid response";
+	}
 
-let thirdQuestion = prompt("I have travelled to America");
+	// console.log(message);
+	alert(message);
 
-let fourthQuestion = prompt("I hate minestrone soup");
+	let secondQuestion = prompt("I used to have a guinea pig called Derek");
 
-let fifthQuestion = prompt("I have two siblings");
+	if (
+		secondQuestion.toLowerCase() === "yes" ||
+		secondQuestion.toLowerCase() === "y"
+	) {
+		message = "Correct! ✅";
+	} else if (
+		secondQuestion.toLowerCase() === "no" ||
+		secondQuestion.toLowerCase() === "n"
+	) {
+		message = "Incorrect! ❌";
+	} else {
+		message = "That is not a valid response";
+	}
 
-// console.log("Hi there " + myName);
+	// console.log(message);
+	alert(message);
 
-// prompt(message) = ;
+	let thirdQuestion = prompt("I have travelled to America");
 
-// let answer1 = confirm("Are you ok?");
+	if (
+		thirdQuestion.toLowerCase() === "yes" ||
+		thirdQuestion.toLowerCase() === "y"
+	) {
+		message = "Incorrect! ❌";
+	} else if (
+		thirdQuestion.toLowerCase() === "no" ||
+		thirdQuestion.toLowerCase() === "n"
+	) {
+		message = "Correct! ✅";
+	} else {
+		message = "That is not a valid response";
+	}
 
-// if (answer1 === true) {
-// 	console.log("You are ok");
-// } else {
-// 	console.log("You are not okay.");
-// }
+	// console.log(message);
+	alert(message);
 
-// console.log(answer1);
+	let fourthQuestion = prompt("I hate minestrone soup");
 
-// let first = true;
-// let second = false;
-// let third = true;
+	if (
+		fourthQuestion.toLowerCase() === "yes" ||
+		fourthQuestion.toLowerCase() === "y"
+	) {
+		message = "Correct! ✅";
+	} else if (
+		fourthQuestion.toLowerCase() === "no" ||
+		fourthQuestion.toLowerCase() === "n"
+	) {
+		message = "Incorrect! ❌";
+	} else {
+		message = "That is not a valid response";
+	}
 
-// if (first && third) {
-// 	console.log("first and third were both true");
-// } else if (first || second) {
-// 	console.log("The first or second was true");
-// } else if (third) {
-// 	console.log("first and second were flas, but the thirs is true");
-// } else {
-// 	console.log("Is anything real?");
-// }
+	// console.log(message);
+	alert(message);
 
-// let color = prompt("What is favourite colour?");
+	let fifthQuestion = prompt("I have two siblings");
 
-// console.log(color);
-// console.log(color.toLowerCase());
+	if (
+		fifthQuestion.toLowerCase() === "yes" ||
+		fifthQuestion.toLowerCase() === "y"
+	) {
+		message = "Incorrect! ❌";
+	} else if (
+		fifthQuestion.toLowerCase() === "no" ||
+		fifthQuestion.toLowerCase() === "n"
+	) {
+		message = "Correct! ✅";
+	} else {
+		message = "That is not a valid response";
+	}
 
-// switch (color.toLowerCase()) {
-// 	case "red":
-// 		console.log("Your fav colour is red");
-// 		break;
-// 	case "blue":
-// 		console.log("Your fav colour is blue");
-// 		break;
-// 		deafault: console.log("I don't what kind of strange colour you picked!");
-// }
+	// console.log(message);
+	alert(message + " That is the end of the quiz " + myName);
+}

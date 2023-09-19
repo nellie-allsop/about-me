@@ -1,15 +1,27 @@
+body {
+	scroll-behavior: smooth;
+	background-color: #eae0cc;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#homemade-header {
+	border-radius: 3rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 45%;
+}
+
 p {
 	margin: 16px;
 }
 
-#important {
-	font-size: 10rem;
+button {
+	border-radius: 3rem;
+	font-size: 1rem;
+	cursor: pointer;
 }
 
-.fun {
-	font-style: italic;
-}
-
-body {
-	scroll-behavior: smooth;
+footer {
+	text-align: center;
 }
