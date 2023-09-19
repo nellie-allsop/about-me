@@ -12,14 +12,37 @@ body {
 	width: 45%;
 }
 
-p {
-	margin: 16px;
-}
-
 button {
 	border-radius: 3rem;
+	border: white;
 	font-size: 1rem;
 	cursor: pointer;
+	color: #c9ada1;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 45%;
+	margin-top: 16px;
+}
+
+button:hover {
+	background-color: #c9ada1;
+	color: #eae0cc;
+}
+
+h2 {
+	color: #c9ada1;
+}
+
+.column {
+	float: left;
+	width: 33.3%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 footer {
