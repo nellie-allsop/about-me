@@ -134,7 +134,7 @@ function startQuiz() {
 		message +
 			" And, that's the end of the quiz " +
 			myName +
-			"If you were interested, my family members are Claire, Simon and Alfie. At the end of that quiz, you have " +
+			" If you were interested, my family members are called Claire, Simon and Alfie. At the end of that quiz, you have " +
 			userPoints +
 			" out of 7 points"
 	);
