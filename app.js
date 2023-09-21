@@ -103,6 +103,7 @@ function startQuiz() {
 	// console.log(message);
 	alert(message);
 
+	let answer = 6;
 	let sixthQuestion = prompt(
 		"Next up, can you guess how many pet guinea pigs I've had across my lifetime? Choose a number between 1 and 10"
 	);
@@ -116,6 +117,10 @@ function startQuiz() {
 	}
 	// console.log(message);
 	alert(message);
+
+	for (let i = 1; i <= 4; i++) {
+		console.log(i);
+	}
 
 	let seventhQuestion = prompt(
 		"And finally, I have three people in my family (other than me!) Can you guess any of their names?"
